@@ -2,8 +2,8 @@
   <p>Hello, my name is {{name}}.</p>
   <div class="circle-container">
     <ul class="site-circle">
-      {{#each people}}
-        <li class="site-item">{{user}}</li>
+      {{#each site}}
+        <li class="site-item">{{name}}{{lastBuildAuthor}}</li>
       {{/each}}
     </ul>
   </div>
