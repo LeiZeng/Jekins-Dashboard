@@ -1,8 +1,10 @@
 <div id="container">
   <p>Hello, my name is {{name}}.</p>
-  <ul>
-    {{#each people}}
-      <li>{{user}}</li>
-    {{/each}}
-  </ul>
+  <div class="circle-container">
+    <ul class="site-circle">
+      {{#each people}}
+        <li class="site-item">{{user}}</li>
+      {{/each}}
+    </ul>
+  </div>
 </div>

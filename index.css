@@ -1,3 +1,39 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 #app {
   position: fixed;
   top: 0;
@@ -6,3 +42,40 @@
   bottom: 0;
   background: rgba(255, 0, 0, 0.1);
 }
+.circle-container {
+  width: 100%;
+  position: relative;
+  top: 200px;
+  display: block;
+  perspective: 500px;
+}
+.site-circle {
+  width: 100%;
+  display: block;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform .5s;
+}
+.site-item {
+  margin: 0;
+  display: block;
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 50%;
+  top: 10px;
+  border: 2px solid #000;
+  margin-left: -60px;
+  border-radius: 50%;
+  text-align: center;
+  transition: transform .5s;
+}
+.circle-container .site-item:nth-child(1) { transform: rotateY(   0deg ) translateZ( 200px ); }
+.circle-container .site-item:nth-child(2) { transform: rotateY(  40deg ) translateZ( 200px ); }
+.circle-container .site-item:nth-child(3) { transform: rotateY(  80deg ) translateZ( 200px ); }
+.circle-container .site-item:nth-child(4) { transform: rotateY( 120deg ) translateZ( 200px ); }
+.circle-container .site-item:nth-child(5) { transform: rotateY( 160deg ) translateZ( 200px ); }
+.circle-container .site-item:nth-child(6) { transform: rotateY( 200deg ) translateZ( 200px ); }
+.circle-container .site-item:nth-child(7) { transform: rotateY( 240deg ) translateZ( 200px ); }
+.circle-container .site-item:nth-child(8) { transform: rotateY( 280deg ) translateZ( 200px ); }
+.circle-container .site-item:nth-child(9) { transform: rotateY( 320deg ) translateZ( 200px ); }
