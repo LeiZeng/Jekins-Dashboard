@@ -10,6 +10,7 @@
   },
   "scripts": {
     "test": "NODE_ENV=test eslint ./",
+    "start": "npm run budo",
     "budo": "NODE_ENV=development budo index.js -o -v -- -d -v"
   },
   "author": "",
