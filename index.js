@@ -2,7 +2,7 @@ import 'babel-polyfill'
 import 'isomorphic-fetch'
 import $ from 'jquery'
 import appTmp from './hbs/app.hbs'
-// import { getAllCIFromPipeline } from './jenkins'
+import { getAllCIFromPipeline } from './jenkins'
 
 const duplicate = (num, obj) => {
   const result = []
@@ -23,5 +23,6 @@ const appData = {
   site: duplicate(9, siteData)
 }
 const app = appTmp(appData)
+getAllCIFromPipeline()
 
 $('#app').append(app)

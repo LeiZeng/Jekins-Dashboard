@@ -11,16 +11,16 @@ export const getAllViews = () => {
   return fetchJson(`${root}/api/json?tree=views[name,jobs[name]]`)
     .then(json => {
       const views = json.views.filter(view => {
-        return view.name.contain('vy')
+        return view.name.indexOf('vy') > -1
       })
-      return Promsie.resolve(views)
+      return Promise.resolve(views)
     })
 }
 
 export const getAllPipelinesFromViews = () => {
   return getAllViews().then(views => {
     console.log(views);
-    return Promsie.all(views)
+    return Promise.all(views)
   })
 }
 
@@ -38,12 +38,11 @@ export const getLatestBuildFromCI = (ci) => {
 }
 
 const fetchJson = (url) => {
-  return $.ajax({
-    url: url,
-    jsonp: "callback",
-    dataType: "jsonp",
-    success: function( response ) {
-      console.log(response);
+  return fetch(url)
+  .then(response => {
+    if (response.status < 200 || response.status >= 400) {
+      throw response
     }
+    return response.json()
   })
 }
