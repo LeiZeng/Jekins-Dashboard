@@ -1,14 +1,6 @@
 <div id="container">
-  <p>Hello, my name is {{name}}.</p>
+  <p>Hello, my name is.</p>
   <div class="circle-container">
-    <ul class="site-circle">
-      {{#each site}}
-        <li class="site-item {{#if status}}site-build-failed{{/if}}">
-          <div class="site-name">{{name}}</div>
-          <div class="last-build-author">{{lastBuildAuthor}}</div>
-          <div class="last-build-time">{{lastBuildTime}}</div>
-        </li>
-      {{/each}}
-    </ul>
+    <ul class="site-circle"></ul>
   </div>
 </div>
