@@ -1,6 +1,9 @@
+import 'babel-polyfill'
+import 'isomorphic-fetch'
 import $ from 'jquery'
-
 import appTmp from './hbs/app.hbs'
+// import { getAllCIFromPipeline } from './jenkins'
+
 const duplicate = (num, obj) => {
   const result = []
   let i = 0
@@ -13,7 +16,7 @@ const siteData = {
   name: 'GIO',
   lastBuildAuthor:'Ziyi',
   lastBuildTime:'2016/01/28',
-  status:'pass'
+  status: ''
 }
 const appData = {
   name: 'Taiyu',

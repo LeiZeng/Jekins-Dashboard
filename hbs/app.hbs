@@ -3,7 +3,11 @@
   <div class="circle-container">
     <ul class="site-circle">
       {{#each site}}
-        <li class="site-item">{{name}}{{lastBuildAuthor}}</li>
+        <li class="site-item {{#if status}}site-build-failed{{/if}}">
+          <div class="site-name">{{name}}</div>
+          <div class="last-build-author">{{lastBuildAuthor}}</div>
+          <div class="last-build-time">{{lastBuildTime}}</div>
+        </li>
       {{/each}}
     </ul>
   </div>
