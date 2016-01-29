@@ -20,8 +20,12 @@ $.fn.circle3d = function(list) {
   })
   $circle.find('.site-item')
   .each((index, item) => {
-    return $(item).css({
-      backgroundImage: 'url(' + prioritizedList[index].logo + ')',
+    const $item = $(item)
+    $item.find('.background, .site-item-wrap')
+      .css({
+        backgroundImage: 'url(' + prioritizedList[index].logo + ')'
+      })
+    return $item.css({
       transform: ('rotateY('
         + getAngle(index, $items.length)
         + 'deg) translateZ('

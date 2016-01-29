@@ -1,5 +1,10 @@
 <li class="site-item {{#if status}}site-build-failed{{/if}}">
-  <div class="site-name">{{name}}</div>
-  <div class="last-build-author">{{lastBuildAuthor}}</div>
-  <div class="last-build-time">{{lastBuildTime}}</div>
+  <div class="flip-wrap">
+    <div class="site-item-wrap">
+      <div class="site-name">{{name}}</div>
+      <div class="last-build-author">{{lastBuildAuthor}}</div>
+      <div class="last-build-time">{{lastBuildTime}}</div>
+    </div>
+    {{!-- <div class="background"></div> --}}
+  </div>
 </li>

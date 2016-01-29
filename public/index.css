@@ -34,18 +34,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+h1 {
+  text-align: center;
+  font-size: 2em;
+  margin: 1em;
+}
 #app {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(255, 0, 0, 0.1);
+  background: rgba(41, 154, 226, 0.83);
+}
+#app.rotate .site-circle {
+  animation: rotate 30s infinite linear;
 }
 .circle-container {
   width: 100%;
   position: relative;
-  top: 100px;
+  top: 200px;
   display: block;
   perspective: 500px;
 }
@@ -58,11 +66,8 @@ table {
   transform: rotateX( -17deg );
 }
 .site-item {
+  display: block;
   margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
   position: absolute;
   width: 120px;
   height: 120px;
@@ -78,9 +83,41 @@ table {
 .last-build-author {
   width: 100%;
 }
-.site-item {
+.flip-wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.site-item-wrap,
+.background {
+  margin: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
   background-size: 100% auto;
+  /*backface-visibility: hidden;*/
+}
+.site-item-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.background {
+  /*transform: rotateY( 180deg );*/
 }
 .site-build-failed {
   border: 6px solid #f00;
+}
+.last-build-author,
+.last-build-time,
+.site-name {
+  color: #222;
+  background: #fff;
+}
+@keyframes rotate {
+  from { transform: rotateX( -17deg ) rotateY(0deg); }
+  to   { transform: rotateX( -17deg ) rotateY(360deg); }
 }
