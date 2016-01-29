@@ -9,9 +9,10 @@
     "npm": ">= 3"
   },
   "scripts": {
-    "test": "NODE_ENV=test eslint ./",
     "start": "npm run budo",
-    "budo": "NODE_ENV=development budo index.js -o -v -- -d -v"
+    "dev": "NODE_ENV=development browserify index.js -o public/index.js",
+    "budo": "NODE_ENV=development budo index.js -d public -o -v -- -d -v",
+    "server": "node main"
   },
   "author": "",
   "license": "ISC",
@@ -29,10 +30,13 @@
   "dependencies": {
     "babel-polyfill": "^6.3.14",
     "bluebird": "^3.1.5",
+    "body-parser": "^1.14.2",
+    "express": "^4.13.4",
     "fetch-jsonp": "^1.0.0",
     "handlebars": "^4.0.5",
     "isomorphic-fetch": "^2.2.1",
-    "jquery": "^2.2.0"
+    "jquery": "^2.2.0",
+    "morgan": "^1.6.1"
   },
   "browserify": {
     "transform": [
