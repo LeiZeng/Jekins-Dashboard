@@ -3,85 +3,74 @@
     "name": "GIO",
     "lastBuildAuthor": "HeWei",
     "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
+    "logo": "imgs/daxiang.jpg",
     "status": ""
   },{
-    "name": "GIO",
+    "name": "Apia",
+    "lastBuildAuthor": "Ziyi",
+    "lastBuildTime": "016/01/29",
+    "logo": "imgs/kaola.jpeg",
+    "status": "failed"
+  },{
+    "name": "Sunbank",
+    "lastBuildAuthor": "ZengLei",
+    "lastBuildTime": "016/01/29",
+    "logo": "imgs/ly.jpeg",
+    "status": ""
+  },{
+    "name": "VeroCentral",
+    "lastBuildAuthor": "YuLei",
+    "lastBuildTime": "016/01/28",
+    "logo": "imgs/haishi.jpeg",
+    "status": ""
+  },{
+    "name": "Sunins",
+    "lastBuildAuthor": "ChengChen",
+    "lastBuildTime": "016/01/28",
+    "logo": "imgs/squirrel.jpeg",
+    "status": ""
+  },{
+    "name": "Bingle",
+    "lastBuildAuthor": "Ziyi",
+    "lastBuildTime": "016/01/28",
+    "logo": "imgs/qie.jpg",
+    "status": "failed"
+  },{
+    "name": "AAIM",
+    "lastBuildAuthor": "Ziyi",
+    "lastBuildTime": "016/01/28",
+    "logo": "imgs/baozi.jpeg",
+    "status": "failed"
+  },{
+    "name": "Resilium",
+    "lastBuildAuthor": "WangYang",
+    "lastBuildTime": "016/01/28",
+    "logo": "imgs/lion.jpeg",
+    "status": ""
+  },{
+    "name": "Asterson",
+    "lastBuildAuthor": "Kenny",
+    "lastBuildTime": "016/01/28",
+    "logo": "imgs/haitun.jpeg",
+    "status": "failed"
+  },{
+    "name": "EDS",
     "lastBuildAuthor": "HeWei",
     "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": "failed"
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
+    "logo": "imgs/hema.jpeg",
+    "status": ""
+  },
+  {
+    "name": "Agile acdemy",
+    "lastBuildAuthor": "Kenny",
     "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
+    "logo": "imgs/banma.jpeg",
     "status": ""
   },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": ""
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": ""
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": ""
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": ""
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": "failed"
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": ""
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": ""
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": "failed"
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "Ziyi",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": ""
-  },{
-    "name": "GIO",
+    "name": "Sharetrade",
     "lastBuildAuthor": "HeWei",
     "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
-    "status": "failed"
-  },{
-    "name": "GIO",
-    "lastBuildAuthor": "HeWei",
-    "lastBuildTime": "016/01/28",
-    "logo": "imgs/catg.jpg",
+    "logo": "imgs/jingyu.jpeg",
     "status": ""
-  }
+  },
 ]
