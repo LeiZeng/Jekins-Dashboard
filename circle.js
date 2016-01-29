@@ -16,11 +16,12 @@ $.fn.circle3d = function(list) {
   $circle.append($items)
 
   $this.css({
-    perspective: fullWidth + 'px'
+    perspective: fullWidth * 1.3 + 'px'
   })
   $circle.find('.site-item')
   .each((index, item) => {
     const $item = $(item)
+    const itemWidth = getLengthOfItems($items.length, radius)
     $item.find('.background, .site-item-wrap')
       .css({
         backgroundImage: 'url(' + prioritizedList[index].logo + ')'
@@ -31,17 +32,20 @@ $.fn.circle3d = function(list) {
         + 'deg) translateZ('
         + radius
         + 'px)'),
-      width: getLengthOfItems($items.length, radius),
-      height: getLengthOfItems($items.length, radius)
+      marginLeft: - itemWidth / 2,
+      width: itemWidth,
+      height: itemWidth
     })
   })
 
-  // if (warnningHandler) {
-  //   clearInterval(warnningHandler)
-  // }
-  // setInterval(() => {
-    warn(prioritizedList[0].lastBuildAuthor, prioritizedList[0].name)
-  // }, 30)
+  if (warnningHandler) {
+    clearInterval(warnningHandler)
+  }
+  setInterval(() => {
+    if ($('#app').hasClass('warn')) {
+      warn(prioritizedList[0].lastBuildAuthor, prioritizedList[0].name)
+    }
+  }, 3000)
 }
 
 const getAngle = (index, length) => {

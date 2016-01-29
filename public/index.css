@@ -53,7 +53,7 @@ h1 {
 .circle-container {
   width: 100%;
   position: relative;
-  top: 200px;
+  top: 100px;
   display: block;
   perspective: 500px;
 }
@@ -74,14 +74,30 @@ h1 {
   left: 50%;
   top: 10px;
   border: 2px solid #000;
-  margin-left: -60px;
   border-radius: 50%;
   text-align: center;
   transition: transform .5s;
 }
-
-.last-build-author {
+.site-name {
+  font-size: 1.6em;
+  font-weight: bold;
+  font-family: monospace;
+  border-radius: 4px;
   width: 100%;
+}
+.site-build-failed .site-name {
+  margin-bottom: 20px;
+  width: auto;
+}
+.site-build-failed .last-build-author {
+  display: block;
+  background: #F00;
+  padding: 5px 0;
+  width: 100%;
+  font-size: 1.2em;
+}
+.last-build-author {
+  display: none;
 }
 .flip-wrap {
   position: relative;
@@ -103,6 +119,7 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  align-content: center;
   flex-wrap: wrap;
 }
 .background {

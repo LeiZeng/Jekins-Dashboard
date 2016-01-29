@@ -22,7 +22,7 @@
     "lastBuildAuthor": "YuLei",
     "lastBuildTime": "016/01/28",
     "logo": "imgs/haishi.jpeg",
-    "status": ""
+    "status": "failed"
   },{
     "name": "Sunins",
     "lastBuildAuthor": "ChengChen",
@@ -33,22 +33,22 @@
     "name": "Bingle",
     "lastBuildAuthor": "Ziyi",
     "lastBuildTime": "016/01/28",
-    "logo": "imgs/qie.jpg",
-    "status": "failed"
+    "logo": "imgs/qie.jpeg",
+    "status": ""
   },{
     "name": "AAIM",
     "lastBuildAuthor": "Ziyi",
     "lastBuildTime": "016/01/28",
     "logo": "imgs/baozi.jpeg",
-    "status": "failed"
+    "status": ""
   },{
     "name": "Resilium",
     "lastBuildAuthor": "WangYang",
     "lastBuildTime": "016/01/28",
-    "logo": "imgs/lion.jpeg",
+    "logo": "imgs/lion.jpg",
     "status": ""
   },{
-    "name": "Asterson",
+    "name": "Astrson",
     "lastBuildAuthor": "Kenny",
     "lastBuildTime": "016/01/28",
     "logo": "imgs/haitun.jpeg",

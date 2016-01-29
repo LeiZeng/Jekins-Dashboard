@@ -11,3 +11,6 @@ $app.find('.circle-container').circle3d()
 $app.find('#rotate').on('click', () => {
   $app.toggleClass('rotate')
 })
+$app.find('#warn').on('click', () => {
+  $app.toggleClass('warn')
+})
