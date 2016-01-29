@@ -73,7 +73,7 @@ h1 {
   height: 120px;
   left: 50%;
   top: 10px;
-  border: 2px solid #000;
+  border: 2px solid #fff;
   border-radius: 50%;
   text-align: center;
   transition: transform .5s;
@@ -98,6 +98,9 @@ h1 {
 }
 .last-build-author {
   display: none;
+}
+.last-build-time {
+  margin-top: 10px;
 }
 .flip-wrap {
   position: relative;
